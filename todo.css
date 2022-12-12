@@ -1,0 +1,130 @@
+/*Geral*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica;
+  color: #333;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(90deg, #4e54c8 0%, #8f94fb 90%);
+}
+
+button {
+  background-color: #fdfdfd;
+  color: #102f5e;
+  border: 2px solid #102f5e;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: #102f5e;
+  color: #fff;
+}
+
+button:hover > i {
+  color: #fff;
+}
+
+button i {
+  color: #102f5e;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+input,
+select {
+  padding: 0.25rem 0.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+/*ToDo Header*/
+.todo-container {
+  /*Colocando o container no meio e estilizando*/
+  max-width: 450px;
+  margin: 3rem auto 0;
+  background-color: #fdfdfd;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+.todo-container header {
+  /*Estilizando o titulo do container*/
+  text-align: center;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+/*ToDo Forms*/
+#todo-form, /*Estilizando o adicionar e o editar tarefas*/
+#edit-form {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#todo-form p, /*Textos do add e edit tarefas*/
+#edit-form p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.formControl {
+  display: flex;
+}
+
+.formControl input {
+  margin-right: 0.3rem;
+}
+
+#cancel-edit-btn {
+  margin-top: 1rem;
+}
+
+/* ToDo toolbar*/
+
+#toolbar {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+
+#toolbar h4 {
+  margin-bottom: 0.5rem;
+}
+
+/*ToDo List*/
+.todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.todo h3 {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.todo button {
+  margin-left: 0.4rem;
+}
+
+.done,
+.done h3 {
+  background-color: #395169;
+  color: #fff;
+  text-decoration: line-through;
+  font-style: italic;
+}
